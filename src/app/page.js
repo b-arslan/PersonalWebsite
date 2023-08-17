@@ -1,95 +1,54 @@
+'use client'
 import Image from 'next/image'
-import styles from './page.module.css'
+import profileImg from '../../public/profile.jpg'
+import linkedinIcon from '../../public/linkedin-icon.svg'
+import githubIcon from '../../public/github-icon.svg'
+import { getGithub, getLinkedin, resumeNavigate, getCode } from './services/routes'
 
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+
+  
+    return (
+        <div className="Home">
+            
+            <div className="header">
+                <div className="btn">
+                    <ul>
+                        <li><a href='/about'>About Me</a></li>
+                        <li><a onClick={resumeNavigate}>Resume</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div className="main-container">
+
+                <div className="container">
+
+                    <Image id="profile" src={profileImg} alt="profileImg"/>
+
+                </div>
+
+                <div className='container'>
+
+                    <h1>Hi, I'm Buğra<br /><br />I'm a Senior Computer Engineering Student at Namik Kemal University</h1>
+
+                    <div class="socials">
+
+                        <Image className='img' src={linkedinIcon} alt="linkedin-icon" onClick={getLinkedin} />
+                        <Image className='img' src={githubIcon} alt="github-icon" onClick={getGithub} />
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div className="footer">
+                <p className='footer-text' onClick={getCode}>Get the code</p>
+            </div>
+
+
         </div>
-      </div>
+    );
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
 }
