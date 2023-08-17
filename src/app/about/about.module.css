@@ -1,9 +1,4 @@
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 .About {
     display: flex;
     flex-direction: column;
@@ -13,16 +8,12 @@
     gap: 2rem;
 }
 
-h2 {
+.aboutHeader {
     font-size: 48px;
     font-weight: 800;
 }
-/*
-p {
-    font-size: 24px;
-}
-*/
-.about-text {
+
+.aboutText {
     width: 72vw;
     text-align: justify;
     display: flex;
@@ -36,13 +27,13 @@ p {
     font-weight: 800;
 }
 
-#go-back {
+.btn {
     background: #7351FF;
     border: 2px solid #7351FF;
-    width: 160px;
-    height: 50px;
-    border-radius: 35px;
+    width: 200px;
+    height: 90px;
     color: #fff;
-    font-size: 18px; 
+    font-size: 18px;
+    text-decoration: none; 
     cursor: pointer;
 }

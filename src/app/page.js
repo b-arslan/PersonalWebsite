@@ -1,4 +1,5 @@
 'use client'
+import styles from './page.module.css'
 import Image from 'next/image'
 import profileImg from '../../public/profile.jpg'
 import linkedinIcon from '../../public/linkedin-icon.svg'
@@ -9,33 +10,33 @@ export default function Home() {
 
   
     return (
-        <div className="Home">
+        <div className={styles.Home}>
             
-            <div className="header">
-                <div className="btn">
+            <div className={styles.header}>
+                <div>
                     <ul>
-                        <li><a href='/about'>About Me</a></li>
-                        <li><a onClick={resumeNavigate}>Resume</a></li>
+                        <li><a className={styles.a} href='/about'>About Me</a></li>
+                        <li><a className={styles.a} onClick={resumeNavigate}>Resume</a></li>
                     </ul>
                 </div>
             </div>
 
-            <div className="main-container">
+            <div className={styles.mainContainer}>
 
-                <div className="container">
+                <div className={styles.container}>
 
-                    <Image id="profile" src={profileImg} alt="profileImg"/>
+                    <Image className={styles.profile} src={profileImg} alt="profileImg"/>
 
                 </div>
 
-                <div className='container'>
+                <div className={styles.container}>
 
-                    <h1>Hi, I'm Buğra<br /><br />I'm a Senior Computer Engineering Student at Namik Kemal University</h1>
+                    <h1 className={styles.title}>Hi, I'm Buğra<br /><br />I'm a Senior Computer Engineering Student at Namik Kemal University</h1>
 
-                    <div class="socials">
+                    <div className={styles.socials}>
 
-                        <Image className='img' src={linkedinIcon} alt="linkedin-icon" onClick={getLinkedin} />
-                        <Image className='img' src={githubIcon} alt="github-icon" onClick={getGithub} />
+                        <Image className={styles.img} src={linkedinIcon} alt="linkedin-icon" onClick={getLinkedin} />
+                        <Image className={styles.img} src={githubIcon} alt="github-icon" onClick={getGithub} />
 
                     </div>
 
@@ -43,8 +44,8 @@ export default function Home() {
 
             </div>
 
-            <div className="footer">
-                <p className='footer-text' onClick={getCode}>Get the code</p>
+            <div className={styles.footer}>
+                <p className={styles.footerText} onClick={getCode}>Get the code</p>
             </div>
 
 
