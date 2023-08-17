@@ -1,11 +1,11 @@
-
+/* .About için stiller */
 .About {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     gap: 2rem;
+    height: 100vh;
 }
 
 .aboutHeader {
@@ -14,12 +14,10 @@
 }
 
 .aboutText {
-    width: 72vw;
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
     font-size: 24px;
+    font-weight: 400;
+    text-align: justify;
+    width: 88vw;
 }
 
 .company {
@@ -29,11 +27,25 @@
 
 .btn {
     background: #7351FF;
-    border: 2px solid #7351FF;
-    width: 200px;
-    height: 90px;
+    border: none;
+    padding: 10px 20px;
     color: #fff;
     font-size: 18px;
-    text-decoration: none; 
+    text-decoration: none;
     cursor: pointer;
+}
+
+/* Tabletler ve telefonlar için medya sorguları */
+@media (max-width: 768px) {
+    .aboutHeader {
+        font-size: 36px;
+    }
+
+    .aboutText {
+        font-size: 20px;
+    }
+    
+    .btn {
+        font-size: 16px;
+    }
 }

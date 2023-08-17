@@ -31,7 +31,7 @@ export default function Home() {
 
                 <div className={styles.container}>
 
-                    <h1 className={styles.title}>Hi, I'm Buğra<br /><br />I'm a Senior Computer Engineering Student at Namik Kemal University</h1>
+                    <h1 className={styles.title}>Hey, I'm Buğra<br /><br />I'm a Senior Computer Engineering Student at Namik Kemal University</h1>
 
                     <div className={styles.socials}>
 
