@@ -67,7 +67,7 @@
 }
 
 .title, .profile, .img {
-    animation-name: moveRight;
+    animation-name: moveDown;
     animation-duration: 1.5s;
 }
 

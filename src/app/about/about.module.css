@@ -1,4 +1,4 @@
-/* .About için stiller */
+
 .About {
     display: flex;
     flex-direction: column;
@@ -6,6 +6,8 @@
     align-items: center;
     gap: 2rem;
     height: 100vh;
+    animation-name: moveDown;
+    animation-duration: 1.5s;
 }
 
 .aboutHeader {
@@ -27,7 +29,10 @@
 
 .btn {
     background: #7351FF;
+    width: 150px;
+    height: 50px;
     border: none;
+    border-radius: 50px;
     padding: 10px 20px;
     color: #fff;
     font-size: 18px;
@@ -35,7 +40,30 @@
     cursor: pointer;
 }
 
-/* Tabletler ve telefonlar için medya sorguları */
+.btn:hover {
+    animation: pulsate 2s ease-in-out;
+}
+
+@keyframes pulsate {
+    0%{
+        box-shadow: 
+        0 0 50px #7351FF,
+        0 0 75px #FFFFFF;
+    }
+}
+
+@keyframes moveDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+/* responsive design */
 @media (max-width: 768px) {
     .aboutHeader {
         font-size: 36px;
