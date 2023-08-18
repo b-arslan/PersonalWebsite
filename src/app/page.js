@@ -1,58 +1,20 @@
 'use client'
+
 import styles from './page.module.css'
-import Image from 'next/image'
-import profileImg from '../../public/profile.jpg'
-import linkedinIcon from '../../public/linkedin-icon.svg'
-import githubIcon from '../../public/github-icon.svg'
-import { getGithub, getLinkedin, resumeNavigate, getCode } from './services/routes'
+import Header from "./components/Header"
+import Content from "./components/Content"
+import Footer from "./components/Footer"
 
 export default function Home() {
 
   
     return (
         <div className={styles.Home}>
-            
-            <div className={styles.header}>
-                <div>
-                    <ul>
-                        <li><a className={styles.button} href='/about'>About Me</a></li>
-                        <li><a className={styles.button} onClick={resumeNavigate}>Resume</a></li>
-                    </ul>
-                </div>
-                <div className={styles.mobileHeader}>
-                    <a className={styles.mobileBtn} href='/about'>About Me</a>
-                    <a className={styles.mobileBtn} onClick={resumeNavigate}>Resume</a>
-                </div>
-            </div>
 
-            <div className={styles.mainContainer}>
-
-                <div className={styles.container}>
-
-                    <Image className={styles.profile} src={profileImg} alt="profileImg" priority={true}/>
-
-                </div>
-
-                <div className={styles.container}>
-
-                    <h1 className={styles.title}>Hey, I'm Buğra<br /><br />I'm a Senior Computer Engineering Student at Namik Kemal University</h1>
-
-                    <div className={styles.socials}>
-
-                        <Image className={styles.img} src={linkedinIcon} alt="linkedin-icon" onClick={getLinkedin} />
-                        <Image className={styles.img} src={githubIcon} alt="github-icon" onClick={getGithub} />
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div className={styles.footer}>
-                <p className={styles.footerText} onClick={getCode}>Get the code</p>
-            </div>
-
-
+            <Header />
+            <Content />
+            <Footer />        
+    
         </div>
     );
 
