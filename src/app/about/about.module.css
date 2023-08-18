@@ -100,15 +100,5 @@
     
     .btn {
         font-size: 10px;
-        border: none;
-        border-radius: 0;
-        background: none;
-        padding: 0;
-        color: black;
     }
-
-    .btn:hover {
-        animation: none;
-    }
-
 }

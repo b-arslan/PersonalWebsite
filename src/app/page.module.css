@@ -115,7 +115,6 @@
         text-decoration: none;
     }
 
-        
     .mobileBtn {
         text-decoration: none;
         color: #000;
@@ -152,47 +151,13 @@
 
 @media (max-width: 480px) {
 
-    
     .profile {
         width: 150px;
         height: 150px;
     }
 
-    .header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        height: 10vh;
-    }
-
-    .mobileHeader {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 6rem;
-        text-decoration: none;
-    }
-
-        
-    .mobileBtn {
-        text-decoration: none;
-        color: #000;
-    }
-
     .button {
         font-size: 12px;
-    }
-
-    .mainContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .footer {
-        position: relative;
     }
 
     .title {
