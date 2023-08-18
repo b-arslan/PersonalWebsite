@@ -71,6 +71,14 @@
     animation-duration: 1.5s;
 }
 
+.mobileHeader {
+    display: none;
+}
+
+.mobileBtn {
+    text-decoration: none;
+}
+
 @keyframes moveDown {
     0% {
         opacity: 0;
@@ -83,13 +91,6 @@
     }
 }
 
-.mobileHeader {
-    display: none;
-}
-
-.mobileBtn {
-    text-decoration: none;
-}
 
 @media (max-width: 768px) {
 
@@ -147,9 +148,64 @@
     .container {
         width: 75vw;
     }
+}
 
-    .title, .profile, .img {
-        animation-name: moveDown;
-        animation-duration: 1.5s;
+@media (max-width: 480px) {
+
+    
+    .profile {
+        width: 150px;
+        height: 150px;
     }
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        height: 10vh;
+    }
+
+    .mobileHeader {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6rem;
+        text-decoration: none;
+    }
+
+        
+    .mobileBtn {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .button {
+        font-size: 12px;
+    }
+
+    .mainContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer {
+        position: relative;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .img {
+        width: 30px;
+        height: 30px; 
+    }
+
+    .container {
+        width: 60vw;
+    }
+
 }
