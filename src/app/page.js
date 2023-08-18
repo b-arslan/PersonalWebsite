@@ -15,9 +15,13 @@ export default function Home() {
             <div className={styles.header}>
                 <div>
                     <ul>
-                        <li><a className={styles.a} href='/about'>About Me</a></li>
-                        <li><a className={styles.a} onClick={resumeNavigate}>Resume</a></li>
+                        <li><a className={styles.button} href='/about'>About Me</a></li>
+                        <li><a className={styles.button} onClick={resumeNavigate}>Resume</a></li>
                     </ul>
+                </div>
+                <div className={styles.mobileHeader}>
+                    <a className={styles.mobileBtn} href='/about'>About Me</a>
+                    <a className={styles.mobileBtn} onClick={resumeNavigate}>Resume</a>
                 </div>
             </div>
 
@@ -25,7 +29,7 @@ export default function Home() {
 
                 <div className={styles.container}>
 
-                    <Image className={styles.profile} src={profileImg} alt="profileImg"/>
+                    <Image className={styles.profile} src={profileImg} alt="profileImg" priority={true}/>
 
                 </div>
 

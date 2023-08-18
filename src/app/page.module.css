@@ -48,7 +48,7 @@
     color: #000;
 }
 
-.a{
+.button{
     color: #000;
     text-decoration: none;
 }
@@ -71,18 +71,6 @@
     animation-duration: 1.5s;
 }
 
-@keyframes moveRight {
-    0% {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-
-    }
-}
-
 @keyframes moveDown {
     0% {
         opacity: 0;
@@ -95,11 +83,45 @@
     }
 }
 
+.mobileHeader {
+    display: none;
+}
+
+.mobileBtn {
+    text-decoration: none;
+}
+
 @media (max-width: 768px) {
 
     .profile {
         width: 200px;
         height: 200px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        height: 10vh;
+    }
+
+    .mobileHeader {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8rem;
+        text-decoration: none;
+    }
+
+        
+    .mobileBtn {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .button {
+        font-size: 12px;
     }
 
     .mainContainer {
