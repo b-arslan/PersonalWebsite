@@ -1,6 +1,6 @@
-
+// this function opens a new tab and navigates to the github profile
 export const getGithub = () => {
-    window.open('https://www.github.com/b-arslan');
+    window.open('https://www.github.com/b-arslan'); 
 }
 
 export const getLinkedin = () => {

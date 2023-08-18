@@ -1,9 +1,6 @@
-
 body {
-    
     margin:0;
     padding:0;
-    
 }
 
 ul {
@@ -37,15 +34,8 @@ li:hover {
     --_p: 100%
 }
 
-
 @media (max-width: 768px) {
-    ul {/*
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        gap: 5rem;
-        background: aqua;
-        padding: 0;*/
+    ul {
         display: none;
     }
 }
