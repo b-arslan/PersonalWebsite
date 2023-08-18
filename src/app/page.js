@@ -1,6 +1,6 @@
 'use client'
 
-import styles from './page.module.css'
+import styles from './styles/page.module.css'
 import Header from "./components/Header"
 import Content from "./components/Content"
 import Footer from "./components/Footer"

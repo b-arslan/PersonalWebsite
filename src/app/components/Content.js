@@ -1,5 +1,5 @@
 
-import styles from '../page.module.css'
+import styles from '../styles/page.module.css'
 import { getLinkedin, getGithub } from '../services/routes'
 import profileImg from '../../../public/profile.jpg'
 import linkedinIcon from '../../../public/linkedin-icon.svg'
