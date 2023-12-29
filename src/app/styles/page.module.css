@@ -62,8 +62,12 @@
 }
 
 .footerText {
-    text-decoration: underline;
+    color: #000;
+    border: none;
+    background-color: #fff;
     cursor: pointer;
+    text-decoration: underline;
+    font-size: 16px;
 }
 
 .title, .profile, .img {
