@@ -56,14 +56,23 @@
     }
 }
 /* responsive design */
-@media (max-width: 768px) {
+@media (max-width: 932px) {
+    
+    .rowHeader {
+        padding-top: 144px;
+    }
+
+    .rowFooter {
+        padding-bottom: 64px;
+    }
 
     .aboutHeader {
-        font-size: 32px;
+        font-size: 28px;
+        margin-top: 4rem;
     }
 
     .aboutText {
-        font-size: 16px;
+        font-size: 14px;
     }
     
     .btn {
@@ -83,11 +92,12 @@
 @media (max-width: 480px) {
 
     .aboutHeader {
-        font-size: 28px;
+        font-size: 24px;
+        margin-top: 4rem;
     }
 
     .aboutText {
-        font-size: 12px;
+        font-size: 10px;
     }
     
     .btn {

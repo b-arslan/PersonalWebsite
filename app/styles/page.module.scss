@@ -63,3 +63,44 @@
     cursor: pointer; 
     color: #fff; 
 }
+
+@media (max-width: 868px) {
+    .profile {
+        width: 220px;
+        height: 220px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .rowContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .img {
+        font-size: 32px; 
+    }
+}
+
+@media (max-height: 932px) {
+    .layout {
+        max-height: 932px;
+    }
+
+    .header {
+        max-height: 30px;
+    }
+
+    .footer {
+        max-height: 20px;
+    }
+
+    .content {
+        max-height: 680px;
+    }
+}

@@ -10,7 +10,7 @@ function About() {
         <Layout className={styles.About}>
             <Content className={styles.content}>
 
-                <Row>
+                <Row className={styles.rowHeader}>
                     <Col>
                         <Text className={styles.aboutHeader}>About Me</Text>
                     </Col>
@@ -32,7 +32,7 @@ function About() {
 
                 </Row>
 
-                <Row>
+                <Row className={styles.rowFooter}>
                     <Col>
                         <Button className={styles.btn} href="/">Back to Home</Button>
                     </Col>

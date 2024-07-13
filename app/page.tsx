@@ -32,7 +32,7 @@ export default function Home() {
             </Header>
 
             <Content className={styles.content}>
-                <Row>
+                <Row className={styles.rowContent}>
                     <Col span={12}>
                         <Image className={styles.profile} src={ProfileImg} alt="Profile Image"/>
                     </Col>
