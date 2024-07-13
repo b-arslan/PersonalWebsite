@@ -8,7 +8,7 @@ export const getLinkedin = () => {
 }
 
 export const resumeNavigate = () => {
-    window.open('https://drive.google.com/file/d/1x6psE1dY8JPe95noRHt5fVcePN94tt2n/view?usp=sharing')
+    window.open('https://drive.google.com/file/d/1YpGhq6dYN7DfwH73ntuwSFX01IdduNWE/view?usp=sharing')
 }
 
 export const getCode = () => {

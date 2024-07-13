@@ -1,0 +1,65 @@
+.btn, .btn:hover {
+    background: #BFAFF2 !important;
+    border: 1px solid #BFAFF2 !important;
+    border-radius: 36px !important;
+    color: #282828 !important;
+}
+
+.layout {
+    background: #282828;
+    height: 100vh;
+    animation-name: moveDown;
+    animation-duration: 1.5s;
+}
+
+@keyframes moveDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+
+.header {
+    background: #282828;
+}
+
+.footer {
+    background: #282828;
+}
+
+.btnFooter, .btnFooter:hover {
+    color: #fff !important;
+    text-decoration: underline !important;
+    background-color: transparent !important;
+
+}
+
+.profile {
+    width: 400px;
+    height: 400px;
+    border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+    border: 3px solid #BFAFF2;
+}
+
+.title {
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+    font-size: 48px; 
+    cursor: pointer; 
+    color: #fff; 
+}

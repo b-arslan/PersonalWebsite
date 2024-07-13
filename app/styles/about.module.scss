@@ -1,20 +1,23 @@
 
 .About {
+    height: 100vh;
+    animation-name: moveDown;
+    animation-duration: 1.5s;
+    background: #282828;
+}
+
+.content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    height: 100vh;
-    animation-name: moveDown;
-    animation-duration: 1.5s;
 }
 
 .aboutHeader {
     font-size: 48px;
     font-weight: 800;
-    margin-bottom: -0.75px;
-    margin-top: -4px;
+    color: #ffffff;
 }
 
 .aboutText {
@@ -25,33 +28,20 @@
 }
 
 .company {
-    color: #7351FF;
+    color: #BFAFF2;
     font-weight: 800;
 }
 
-.btn {
-    background: #7351FF;
+.btn, .btn:hover {
+    background: #BFAFF2 !important;
     width: 150px;
-    height: 50px;
-    border: none;
+    height: 40px;
+    border: 1px solid #BFAFF2 !important;
     border-radius: 50px;
     padding: 10px 20px;
-    color: #fff;
+    color: #282828 !important;
     font-size: 18px;
     text-decoration: none;
-    cursor: pointer;
-}
-
-.btn:hover {
-    animation: pulsate 2s ease-in-out;
-}
-
-@keyframes pulsate {
-    0%{
-        box-shadow: 
-        0 0 50px #7351FF,
-        0 0 75px #FFFFFF;
-    }
 }
 
 @keyframes moveDown {
