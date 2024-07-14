@@ -62,7 +62,7 @@ export default function ProjectsPage() {
                 </div>
             ) : (
                 <>
-                    <Header style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', background: '#282828', paddingLeft: '24px' }}>
+                    <Header style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', background: '#282828', padding: '36px' }}>
                         <Button className={styles.btn} type='primary' href='/'><ArrowLeftOutlined /> Go Back</Button>
                     </Header>
 

@@ -26,10 +26,17 @@
 
 .header {
     background: #282828;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 36px;
 }
 
 .footer {
     background: #282828;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btnFooter, .btnFooter:hover {

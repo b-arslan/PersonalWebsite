@@ -14,12 +14,15 @@ export default function Home() {
         <Layout className={styles.layout}>
 
             <Header className={styles.header}>
-                <Row>
+                <Row style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                }}>
                     <Col span={24} style={{
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
-                        paddingTop: '24px',
                         gap: '3rem'                        
                     }}>
 
