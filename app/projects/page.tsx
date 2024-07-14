@@ -71,7 +71,7 @@ export default function ProjectsPage() {
                             <Row key={index} gutter={[16, 16]} align="middle" justify="center">
                                 <Col xs={24} md={12} style={{ display: 'flex', justifyContent: 'center' }}>
                                     <img
-                                        src={project.image}
+                                        src={`data:image/jpeg;base64,${project.image}`}
                                         alt={project.name}
                                         style={{ width: '100%', maxWidth: '700px', height: 'auto', objectFit: 'cover', borderRadius: '8px', border: '2px solid #BFAFF2' }}
                                     />
