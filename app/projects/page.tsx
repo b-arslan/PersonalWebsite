@@ -4,6 +4,8 @@ import axios from 'axios';
 import { Layout, Row, Col, Typography, Button, Spin, message } from 'antd';
 import { ArrowLeftOutlined, LoadingOutlined } from '@ant-design/icons';
 import styles from '../styles/projects.module.scss';
+import HeaderComponent from '../components/HeaderComponent';
+import FooterComponent from '../components/FooterComponent';
 
 const { Content, Header } = Layout;
 const { Title, Text } = Typography;
@@ -62,21 +64,23 @@ export default function ProjectsPage() {
                 </div>
             ) : (
                 <>
-                    <Header style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', background: '#282828', padding: '36px' }}>
+                    {/* <Header style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', background: '#282828', padding: '36px' }}>
                         <Button className={styles.btn} type='primary' href='/'><ArrowLeftOutlined /> Go Back</Button>
-                    </Header>
+                    </Header> */}
 
-                    <Content style={{ padding: '64px', display: 'flex', flexDirection: 'column', gap: '32px' }}>
+                    <HeaderComponent />
+
+                    <Content className={styles.content}>
                         {projects.map((project, index) => (
                             <Row key={index} gutter={[16, 16]} align="middle" justify="center">
-                                <Col xs={24} md={12} style={{ display: 'flex', justifyContent: 'center' }}>
+                                <Col xs={24} md={12} style={{ display: 'flex', justifyContent: 'center', padding: '0 1rem 0 1rem' }}>
                                     <img
                                         src={`data:image/jpeg;base64,${project.image}`}
                                         alt={project.name}
                                         style={{ width: '100%', maxWidth: '700px', height: 'auto', objectFit: 'cover', borderRadius: '8px', border: '2px solid #BFAFF2' }}
                                     />
                                 </Col>
-                                <Col xs={24} md={12} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+                                <Col xs={24} md={12} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 1rem 0 1rem' }}>
                                     <Title style={{ color: '#fff', textAlign: 'center' }} level={3}>{project.name}</Title>
                                     <Text style={{ display: 'block', marginBottom: '16px', color: '#fff', textAlign: 'center' }}>{project.description}</Text>
                                     <Button className={styles.btn} type="primary" href={project.link} target="_blank">See Live</Button>
@@ -84,6 +88,8 @@ export default function ProjectsPage() {
                             </Row>
                         ))}
                     </Content>
+
+                    <FooterComponent />
                 </>
             )}
         </Layout>

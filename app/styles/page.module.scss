@@ -3,6 +3,10 @@
     border: 1px solid #BFAFF2 !important;
     border-radius: 36px !important;
     color: #282828 !important;
+
+    @media (max-width: 868px) {
+        width: 78px;
+    }
 }
 
 .layout {
@@ -30,6 +34,24 @@
     align-items: center;
     justify-content: center;
     padding: 36px;
+    margin-bottom: 3rem;
+}
+
+.rowHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.colHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+    @media (max-width: 868px) {
+        gap: 1.2rem;
+    }
 }
 
 .footer {
@@ -37,9 +59,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    margin-top: 3rem;
 }
 
 .btnFooter, .btnFooter:hover {

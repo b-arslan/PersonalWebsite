@@ -41,6 +41,12 @@
     color: #282828 !important;
     font-size: 18px;
     text-decoration: none;
+
+    @media (max-width: 868px) {
+        width: 125px;
+        height: 35px;
+        font-size: 14px;
+    }
 }
 
 @keyframes moveDown {
@@ -73,19 +79,6 @@
     .aboutText {
         font-size: 14px;
     }
-    
-    .btn {
-        font-size: 14px;
-        border: none;
-        border-radius: 0;
-        background: none;
-        padding: 0;
-        color: black;
-    }
-
-    .btn:hover {
-        animation: none;
-    }
 }
 
 @media (max-width: 480px) {
@@ -96,10 +89,6 @@
     }
 
     .aboutText {
-        font-size: 10px;
-    }
-    
-    .btn {
         font-size: 10px;
     }
 }

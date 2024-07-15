@@ -5,6 +5,8 @@ import { resumeNavigate, getCode, getGithub, getLinkedin } from "./services/rout
 import Image from "next/image";
 import ProfileImg from '../public/profile.jpg';
 import { LinkedinOutlined, GithubOutlined } from '@ant-design/icons';
+import HeaderComponent from "./components/HeaderComponent";
+import FooterComponent from "./components/FooterComponent";
 
 const { Header, Content, Footer } = Layout;
 
@@ -13,26 +15,7 @@ export default function Home() {
     return (
         <Layout className={styles.layout}>
 
-            <Header className={styles.header}>
-                <Row style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                }}>
-                    <Col span={24} style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        gap: '3rem'                        
-                    }}>
-
-                        <Button className={styles.btn} type='primary' href="/about">About Me</Button>
-                        <Button className={styles.btn} type='primary' href="/projects">Projects</Button>
-                        <Button className={styles.btn} type='primary' onClick={resumeNavigate}>Resume</Button>
-                        
-                    </Col>
-                </Row>
-            </Header>
+            <HeaderComponent />
 
             <Content className={styles.content}>
                 <Row className={styles.rowContent}>
@@ -59,17 +42,7 @@ export default function Home() {
                 </Row>
             </Content>
 
-            <Footer className={styles.footer}>
-                <Row>
-                    <Col span={24} style={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center'
-                    }}>
-                        <Button className={styles.btnFooter} type="text" onClick={getCode}>Get the code</Button>
-                    </Col>
-                </Row>
-            </Footer>
+            <FooterComponent />
 
         </Layout>
     );

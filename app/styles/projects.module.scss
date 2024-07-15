@@ -3,4 +3,17 @@
     border: 1px solid #BFAFF2 !important;
     border-radius: 36px !important;
     color: #282828 !important;
+
+    @media (max-width: 868px) {
+        width: 78px;
+    }
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 0 2rem 0 2rem;
 }
